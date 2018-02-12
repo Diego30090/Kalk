@@ -1,0 +1,40 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+	<qresource prefix="/fonts">
+		<file alias="Roboto">UI/Resources/fonts/Roboto-Regular.ttf</file>
+	</qresource>
+	<qresource prefix="/icons">
+		<file alias="2d">UI/Resources/imgs/Tabs/axis.png</file>
+		<file alias="3d">UI/Resources/imgs/Tabs/equation.png</file>
+		<file alias="program_icon">UI/Resources/imgs/WindowIcons/icons8-calculator-50.png</file>
+		<file alias="guide_icon">UI/Resources/imgs/WindowIcons/guide.png</file>
+		<file alias="about_icon">UI/Resources/imgs/WindowIcons/info.png</file>
+		<file alias="settings_icon">UI/Resources/imgs/WindowIcons/settings.png</file>
+		<file alias="create_icon">UI/Resources/imgs/WindowIcons/design.png</file>
+	</qresource>
+	<qresource prefix="/shape/2D">
+		<file alias="rectangular">UI/Resources/imgs/Shape/2D/rectangle.png</file>
+		<file alias="triangle_iso">UI/Resources/imgs/Shape/2D/triangle.png</file>
+		<file alias="triangle_ret">UI/Resources/imgs/Shape/2D/right-triangle.png</file>
+		<file alias="square">UI/Resources/imgs/Shape/2D/Square.png</file>
+		<file alias="circle">UI/Resources/imgs/Shape/2D/circle.png</file>
+	</qresource>
+	<qresource prefix="/shape/3D">
+		<file alias="cube">UI/Resources/imgs/Shape/3D/cube.png</file>
+		<file alias="cylinder">UI/Resources/imgs/Shape/3D/cylinder.png</file>
+		<file alias="sphere">UI/Resources/imgs/Shape/3D/sphere.png</file>
+	</qresource>
+	<qresource prefix="/operations">
+		<file alias="minus">UI/Resources/imgs/Operations/minus.png</file>
+		<file alias="plus">UI/Resources/imgs/Operations/plus.png</file>
+		<file alias="multiply">UI/Resources/imgs/Operations/multiply.png</file>
+		<file alias="divide">UI/Resources/imgs/Operations/division.png</file>
+		<file alias="equal">UI/Resources/imgs/Operations/equal.png</file>
+		<file alias="translate">UI/Resources/imgs/Operations/translate.png</file>
+		<file alias="clear">UI/Resources/imgs/Operations/clear.png</file>
+	</qresource>
+	<qresource prefix="/others">
+		<file alias="new_shape">UI/Resources/imgs/OtherIcons/waiting.png</file>
+		<file alias="unknown">UI/Resources/imgs/OtherIcons/question-mark.png</file>
+	</qresource>
+</RCC>
