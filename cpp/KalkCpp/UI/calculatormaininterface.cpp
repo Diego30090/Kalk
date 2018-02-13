@@ -40,7 +40,6 @@ CalculatorMainInterface::CalculatorMainInterface()
 
     TabWidget->setCurrentIndex(0);
     //--------------------------------------------------------------------
-    //menu di prova non finito
     QMenuBar* menu = new QMenuBar(this);
     menu->setFont(r_font);
     QMenu* under_menu = new QMenu("File", this);

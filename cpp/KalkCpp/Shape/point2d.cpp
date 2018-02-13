@@ -1,7 +1,7 @@
 #include "point2d.h"
 #include "math.h"
 #include <typeinfo>
-
+#include <string>
 
 
 Point2D::Point2D(double var_x, double var_y) : x(var_x), y(var_y)

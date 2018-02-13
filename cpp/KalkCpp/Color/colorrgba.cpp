@@ -1,6 +1,6 @@
 #include "colorrgba.h"
 #include <typeinfo>
-
+#include <string>
 
 
 ColorRGBA::ColorRGBA(unsigned short r, unsigned short g, unsigned short b, unsigned short a) : ColorRGB(r,g,b), alpha(a)

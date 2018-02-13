@@ -1,6 +1,7 @@
 #include "cylinder.h"
 #include "../..//Shape2D/Polygon/Quadrilateral/rectangle.h"
-#include "math.h"
+#define _USE_MATH_DEFINES // for C  
+#include <math.h>
 
 
 
@@ -17,14 +18,13 @@ Cylinder* Cylinder::clone() const
 
 std::vector<Point3D> Cylinder::buildCylinder(Rectangle* p) const
 {
-    //if is rectangle
     std::vector<Point3D> points = std::vector<Point3D>();
     for(std::vector<Point2D>::const_iterator it = p->getPoints().begin(); it != p->getPoints().end(); ++it)
     {
         points.push_back(Point3D::p2dTop3d(*it));
     }
 
-    return points; //solo quelli 2d, dovrebbero bastare
+    return points;
 }
 
 

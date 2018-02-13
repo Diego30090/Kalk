@@ -5,7 +5,7 @@ ImageLabel::ImageLabel(const QString &text, const QString &ImagePath, QWidget *p
 {
     if(ImagePath!=""){
         img_path = ImagePath.toStdString();
-        if(size.width()!=-1 && size.width()!=-1){ //non funziona per ora
+        if(size.width()!=-1 && size.height()!=-1){
             QPixmap image = QPixmap(ImagePath).scaled(size);
             setPixmap(image);
         }else{
@@ -19,7 +19,7 @@ void ImageLabel::change_image(const QString &ImagePath, const QSize& size)
 {
     if(ImagePath!=""){
         img_path = ImagePath.toStdString();
-        if(size.width()!=-1 && size.width()!=-1){ //non funziona per ora
+        if(size.width()!=-1 && size.height()!=-1){
             QPixmap image = QPixmap(ImagePath).scaled(size);
             setPixmap(image);
         }else{
@@ -30,7 +30,7 @@ void ImageLabel::change_image(const QString &ImagePath, const QSize& size)
 
 void ImageLabel::change_image(const QPixmap &Image, const QSize& size)
 {
-    if(size.width()!=-1 && size.width()!=-1){ //non funziona per ora
+    if(size.width()!=-1 && size.height()!=-1){
         QPixmap current_image = QPixmap(Image).scaled(size);
         setPixmap(current_image);
     }else{

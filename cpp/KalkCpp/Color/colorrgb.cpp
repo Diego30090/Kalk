@@ -1,6 +1,7 @@
 #include "colorrgb.h"
 #include "math.h"
 #include <typeinfo>
+#include <string>
 
 ColorRGB::ColorRGB(unsigned short r, unsigned short g, unsigned short b) : red(r), green(g), blue(b)
 {

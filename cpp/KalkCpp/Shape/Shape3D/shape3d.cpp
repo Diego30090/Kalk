@@ -58,20 +58,20 @@ const std::vector<Point3D>& Shape3D::getPoints() const
 
 void Shape3D::adjustPoints(const std::vector<Point2D>& bs_points)
 {
- for(std::vector<Point2D>::const_iterator it = bs_points.begin(); it != bs_points.end(); ++it)
- {
-     Point3D tmp = Point3D::p2dTop3d(*it);
-     bool found = false;
-     for(std::vector<Point3D>::const_iterator it_t = points.begin(); it_t != points.end() && !found; ++it_t)
-     {
-         if(tmp == *it_t){
-             found = true;
-         }
-     }
-     if(!found){
-         points.push_back(tmp);
-     }
- }
+	for(std::vector<Point2D>::const_iterator it = bs_points.begin(); it != bs_points.end(); ++it)
+	{
+		Point3D tmp = Point3D::p2dTop3d(*it);
+		bool found = false;
+		for(std::vector<Point3D>::const_iterator it_t = points.begin(); it_t != points.end() && !found; ++it_t)
+		{
+			if(tmp == *it_t){
+				found = true;
+			}
+		}
+		if(!found){
+			points.push_back(tmp);
+		}
+	}
 }
 
 

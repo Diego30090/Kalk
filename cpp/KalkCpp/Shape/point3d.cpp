@@ -1,6 +1,6 @@
 #include "point3d.h"
 #include "math.h"
-
+#include <string>
 
 
 Point3D::Point3D(double var_x, double var_y, double var_z) : Point2D(var_x, var_y), z(var_z)
